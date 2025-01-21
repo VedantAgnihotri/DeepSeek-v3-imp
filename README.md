@@ -1,4 +1,4 @@
-#**DeepSeek v3 Components in PyTorch**
+## **DeepSeek v3 Components in PyTorch**
 
 🚀 **Implementing fundamental components from DeepSeek v3 research paper in PyTorch.**  
 This project includes **Mixture of Experts (MoE)**, **Rotary Positional Embeddings (RoPE)**, and **Multi-Head Latent Attention (MLA)** implemented from scratch.
