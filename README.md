@@ -17,7 +17,7 @@ This project includes **Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free
 ---
 
 ## 🌟 **Future Work**
-- **Auxiliary Loss-Free Load Balancing:** Optimize MoE without auxiliary loss terms.  # *(implementation finished)*
+- **Auxiliary Loss-Free Load Balancing:** Optimize MoE without auxiliary loss terms.  ## *(implementation finished)*
 - **Multitoken Prediction(MTP):** Optimize the model to predict future tokens, essentially helping the main model and increasing efficiency.  
 
 ---
