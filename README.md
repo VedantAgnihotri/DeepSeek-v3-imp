@@ -1,7 +1,7 @@
 ## **DeepSeek v3 Components in PyTorch**
 
 🚀 **Implementing fundamental components from DeepSeek v3 research paper in PyTorch.**  
-This project includes **Mixture of Experts (MoE)**, **Rotary Positional Embeddings (RoPE)**, and **Multi-Head Latent Attention (MLA)** implemented from scratch.
+This project includes **Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free Load Balancing**, **Rotary Positional Embeddings (RoPE)**, and **Multi-Head Latent Attention (MLA)** implemented from scratch.
 
 ---
 
@@ -9,22 +9,24 @@ This project includes **Mixture of Experts (MoE)**, **Rotary Positional Embeddin
 
 | File           | Description                                                                                   |
 |----------------|-----------------------------------------------------------------------------------------------|
-| **`main.py`**  | Entry point for testing components and running forward passes.                                |
+| **`model.py`**  | Integrates each and every component together to form the main model.                                |
 | **`MLAwRoPE.py`** | Implements Multi-Head Latent Attention integrated with Rotary Positional Embeddings.         |
-| **`DS_MoE.py`**   | Implements Mixture of Experts (MoE) with fundamental features like gating and top-k routing.|
+| **`DS_MoE.py`**   | Implements Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free Load balancing and fundamental features like gating and top-k routing.|
+| **`TransformerBlock.py`**   | Implements Transformer Block by combining MLAwRoPE.py and DS_MoE.py along with RMSNorm and Residual connenctions. |
 
 ---
 
 ## 🌟 **Future Work**
-- **Auxiliary Loss-Free Load Balancing:** Optimize MoE without auxiliary loss terms.  
+- **Auxiliary Loss-Free Load Balancing:** Optimize MoE without auxiliary loss terms.  # *(implementation finished)*
 - **Multitoken Prediction(MTP):** Optimize the model to predict future tokens, essentially helping the main model and increasing efficiency.  
 
 ---
 
 ## 🧪 **Features Implemented**
-- **Mixture of Experts (MoE)**: A scalable and modular design for efficiently handling large models.
+- **Mixture of Experts (MoE)**: A scalable and modular design for efficiently handling large models with groups of Experts.
+- **Auxiliary-Loss-Free Load Balancing**: Ensures balance in each expert's load.
 - **Rotary Positional Embeddings (RoPE)**: Enhancing attention mechanisms with rotational encodings.
-- **Multi-Head Latent Attention (MLA)**: Aggregating multiple attention heads for better feature extraction.
+- **Multi-Head Latent Attention (MLA)**: Aggregating multiple attention heads with latent spaces for efficient feature extraction.
 
 ---
 
