@@ -28,7 +28,7 @@ This project includes **Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free
 - **Auxiliary-Loss-Free Load Balancing**: Ensures balance in each expert's load.
 - **Rotary Positional Embeddings (RoPE)**: Enhancing attention mechanisms with rotational encodings.
 - **Multi-Head Latent Attention (MLA)**: Aggregating multiple attention heads with latent spaces for efficient feature extraction.
-- **Mutli-Token Prediction(MTP)**: Aggregating multiple MTP modules with increasing depths to predict future tokens outside the scope of the main model and increasing overall prediction efficieny of the model.
+- **Multi-Token Prediction(MTP)**: Aggregating multiple MTP modules with increasing depths to predict future tokens outside the scope of the main model and increasing overall prediction efficieny of the model.
 ---
 
 ## 📜 **References**
