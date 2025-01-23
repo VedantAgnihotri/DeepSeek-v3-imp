@@ -1,7 +1,7 @@
 ## **DeepSeek v3 Components in PyTorch**
 
 🚀 **Implementing fundamental components from DeepSeek v3 research paper in PyTorch.**  
-This project includes **Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free Load Balancing**, **Rotary Positional Embeddings (RoPE)**, and **Multi-Head Latent Attention (MLA)** implemented from scratch.
+This project includes **Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free Load Balancing**, **Rotary Positional Embeddings (RoPE)**, **Multi-Token Prediction Modules (MTP Modules)** and **Multi-Head Latent Attention (MLA)** implemented from scratch.
 
 ---
 
@@ -13,12 +13,13 @@ This project includes **Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free
 | **`MLAwRoPE.py`** | Implements Multi-Head Latent Attention integrated with Rotary Positional Embeddings.         |
 | **`DS_MoE.py`**   | Implements Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free Load balancing and fundamental features like gating and top-k routing.|
 | **`TransformerBlock.py`**   | Implements Transformer Block by combining MLAwRoPE.py and DS_MoE.py along with RMSNorm and Residual connenctions. |
+| **`MTP_module.py`**   | Implements Multi Token Prediction using several MTP modules. |
 
 ---
 
 ## 🌟 **Future Work**
 - **Auxiliary Loss-Free Load Balancing:** Optimize MoE without auxiliary loss terms.                                                         *(implementation finished)*
-- **Multitoken Prediction(MTP):** Optimize the model to predict future tokens, essentially helping the main model and increasing efficiency.  
+- **Multitoken Prediction(MTP):** Optimize the model to predict future tokens, essentially helping the main model and increasing efficiency. *(implementation finished)*
 
 ---
 
@@ -27,7 +28,8 @@ This project includes **Sparse Mixture of Experts (MoE) with Auxiliary-Loss-Free
 - **Auxiliary-Loss-Free Load Balancing**: Ensures balance in each expert's load.
 - **Rotary Positional Embeddings (RoPE)**: Enhancing attention mechanisms with rotational encodings.
 - **Multi-Head Latent Attention (MLA)**: Aggregating multiple attention heads with latent spaces for efficient feature extraction.
-
+- **Mutli-Token Prediction(MTP)**: Aggregating multiple MTP modules with increasing depths to predict future tokens outside the scope of the main model and increasing overall prediction efficieny of the model.
+- 
 ---
 
 ## 📜 **References**
